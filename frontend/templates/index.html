@@ -14,11 +14,45 @@
             <input type="text" id="api-base-url" placeholder="Enter API Base URL" value="http://127.0.0.1:5002/api">
             <button onclick="loadPosts()">Load Posts</button>
         </div>
+        
+        <!-- Error display area -->
+        <div id="error-display" class="error-message" style="display: none;"></div>
+        
         <div class="input-field">
             <input type="text" id="post-title" placeholder="Enter Post Title">
             <input type="text" id="post-content" placeholder="Enter Post Content">
             <button onclick="addPost()">Add Post</button>
         </div>
+        
+        <!-- Sorting controls - Part of the requirements -->
+        <div class="sorting-controls">
+            <label>Sort by:</label>
+            <select id="sort-field">
+                <option value="">None</option>
+                <option value="title">Title</option>
+                <option value="content">Content</option>
+            </select>
+            <select id="sort-direction">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button onclick="applySorting()">Apply Sorting</button>
+        </div>
+        
+        <!-- 
+        Testing tools section - Commented out as not part of original requirements
+        <div class="testing-tools">
+            <h3>API Testing Tools</h3>
+            <div class="test-section">
+                <h4>Test Delete Error Handling</h4>
+                <div class="input-group">
+                    <input type="number" id="nonexistent-post-id" placeholder="Enter a non-existent post ID" value="999">
+                    <button onclick="testDeleteErrorHandling()">Test Delete Error</button>
+                </div>
+            </div>
+        </div>
+        -->
+        
         <div id="post-container">
             <!-- Blog posts will be inserted here by JavaScript -->
         </div>

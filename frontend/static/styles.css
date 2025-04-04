@@ -4,88 +4,161 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     margin: 0;
-    padding: 20px 0;
-    height: 100vh;
+    padding: 20px;
 }
 
 .container {
+    max-width: 800px;
+    margin: 0 auto;
     background-color: #fff;
-    width: 80%;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    text-align: center;
 }
 
 .input-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error message styling */
+.error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #d32f2f;
+    font-weight: 500;
+}
+
+/* Sorting controls */
+.sorting-controls {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.input-field input,
-.input-field button {
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease;
-}
-
-.input-field input {
-    flex-grow: 1;
+.sorting-controls label {
     margin-right: 10px;
+    font-weight: bold;
 }
 
-.input-field input::placeholder {
-    color: #aaa;
+.sorting-controls select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
 }
 
-.input-field button {
-    background-color: #4466ee;
-    color: #fff;
-    cursor: pointer;
+/*
+/* Testing tools section - Commented out as not part of original requirements */
+/*
+.testing-tools {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4CAF50;
 }
 
-.input-field button:hover {
-    background-color: #3355dd;
+.testing-tools h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.test-section {
+    margin-top: 10px;
+}
+
+.test-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #388e3c;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+.input-group button {
+    background-color: #ff9800;
+}
+
+.input-group button:hover {
+    background-color: #f57c00;
+}
+*/
+
+#post-container {
+    margin-top: 20px;
 }
 
 .post {
-    border-radius: 8px;
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-    padding: 20px;
-    position: relative;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
 }
 
 .post h2 {
-    margin: 0;
-    color: #4466ee;
-    font-weight: 700;
-}
-
-.post p {
-    margin: 10px 0 0;
+    margin-top: 0;
     color: #333;
 }
 
+.post p {
+    color: #666;
+}
+
 .post button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ff4444;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #f44336;
+    margin-top: 10px;
 }
 
 .post button:hover {
-    background-color: #cc0000;
+    background-color: #d32f2f;
 }
